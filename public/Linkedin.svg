@@ -1,0 +1,141 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .navy { fill: #122C50; }
+      .ink { fill: #232323; }
+      .muted { fill: #F5F7FA; }
+      .stroke { stroke: #E6E9EF; stroke-width: 2; }
+      .card { fill: #FFFFFF; stroke: #E6E9EF; stroke-width: 6; }
+      .btnStart { fill: #34A853; }
+      .btnPause { fill: #FF9500; }
+      .btnDry { fill: #005497; }
+      .awsBlue { fill: #005497; }
+      .awsOrange { fill: #FF9900; }
+      .small { font: 600 18px 'DejaVu Sans', Arial, sans-serif; fill: #232323; }
+      .body { font: 500 22px 'DejaVu Sans', Arial, sans-serif; fill: #232323; }
+      .label { font: 500 20px 'DejaVu Sans', Arial, sans-serif; fill: #5A5A5A; }
+      .h1 { font: 700 48px 'DejaVu Sans', Arial, sans-serif; }
+      .h2 { font: 700 28px 'DejaVu Sans', Arial, sans-serif; }
+      .h3 { font: 700 22px 'DejaVu Sans', Arial, sans-serif; }
+      .mono { font: 500 20px 'DejaVu Sans Mono', monospace; fill: #232323; }
+      .white { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="900"></rect>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="140" fill="#F5F7FA"></rect>
+  <text x="60" y="60" class="h1 navy">LinkedIn Auto-Apply Job Bot — AWS</text>
+  <text x="60" y="100" class="body">Python • Selenium • Automation • Web Scraping • AWS (DynamoDB, S3, EventBridge, Secrets Manager, CloudWatch)</text>
+
+  <!-- Laptop card -->
+  <rect x="60" y="170" rx="24" ry="24" width="960" height="620" class="card"></rect>
+  <rect x="76" y="186" rx="16" ry="16" width="928" height="588" class="stroke" fill="#FFFFFF"></rect>
+  <rect x="76" y="186" width="928" height="64" class="navy"></rect>
+  <text x="96" y="226" class="h2 white">Auto-Apply Queue</text>
+
+  <!-- Buttons -->
+  <g>
+    <rect x="846" y="198" rx="10" ry="10" width="108" height="38" class="btnDry"></rect>
+    <text x="864" y="224" class="small white">Dry-Run</text>
+    <rect x="716" y="198" rx="10" ry="10" width="108" height="38" class="btnPause"></rect>
+    <text x="745" y="224" class="small white">Pause</text>
+    <rect x="586" y="198" rx="10" ry="10" width="108" height="38" class="btnStart"></rect>
+    <text x="616" y="224" class="small white">Start</text>
+  </g>
+
+  <!-- Table headers -->
+  <text x="96" y="280" class="label">Role</text>
+  <text x="336" y="280" class="label">Company</text>
+  <text x="580" y="280" class="label">Match</text>
+  <text x="740" y="280" class="label">Type</text>
+  <text x="860" y="280" class="label">Status</text>
+
+  <!-- Table rows -->
+  <g>
+    <rect x="92" y="292" width="912" height="52" class="muted"></rect>
+    <text x="96" y="326" class="mono">SDE I</text>
+    <text x="336" y="326" class="mono">LPL Financial</text>
+    <text x="580" y="326" class="mono">92%</text>
+    <text x="740" y="326" class="mono">Easy Apply</text>
+    <text x="860" y="326" class="mono" fill="#34A853">Submitted</text>
+  </g>
+
+  <g>
+    <text x="96" y="378" class="mono">Backend Intern</text>
+    <text x="336" y="378" class="mono">Stripe</text>
+    <text x="580" y="378" class="mono">88%</text>
+    <text x="740" y="378" class="mono">Easy Apply</text>
+    <text x="860" y="378" class="mono">Queued</text>
+    <line x1="92" y1="390" x2="1004" y2="390" stroke="#E6E9EF" stroke-width="2"></line>
+  </g>
+
+  <g>
+    <rect x="92" y="396" width="912" height="52" class="muted"></rect>
+    <text x="96" y="430" class="mono">Data Eng Intern</text>
+    <text x="336" y="430" class="mono">T-Mobile</text>
+    <text x="580" y="430" class="mono">85%</text>
+    <text x="740" y="430" class="mono">Easy Apply</text>
+    <text x="860" y="430" class="mono" fill="#34A853">Submitted</text>
+  </g>
+
+  <g>
+    <text x="96" y="482" class="mono">ML Engineer</text>
+    <text x="336" y="482" class="mono">Roblox</text>
+    <text x="580" y="482" class="mono">80%</text>
+    <text x="740" y="482" class="mono">Easy Apply</text>
+    <text x="860" y="482" class="mono" fill="#FF9500">Tailoring</text>
+    <line x1="92" y1="494" x2="1004" y2="494" stroke="#E6E9EF" stroke-width="2"></line>
+  </g>
+
+  <g>
+    <rect x="92" y="500" width="912" height="52" class="muted"></rect>
+    <text x="96" y="534" class="mono">SWE New Grad</text>
+    <text x="336" y="534" class="mono">Ally</text>
+    <text x="580" y="534" class="mono">78%</text>
+    <text x="740" y="534" class="mono">Easy Apply</text>
+    <text x="860" y="534" class="mono" fill="#7A7A7A">Skipped (low match)</text>
+  </g>
+
+  <!-- AWS Integration panel -->
+  <rect x="1080" y="150" rx="22" ry="22" width="460" height="640" class="card"></rect>
+  <text x="1104" y="188" class="h2 awsBlue">AWS Integration</text>
+
+  <g transform="translate(1104,204)">
+    <rect x="0" y="40" width="420" height="96" rx="16" ry="16" class="muted stroke"></rect>
+    <circle cx="36" cy="88" r="22" class="awsOrange"></circle>
+    <text x="72" y="84" class="h3 ink">DynamoDB</text>
+    <text x="72" y="112" class="small">Application ledger (role, status, timestamps)</text>
+
+    <rect x="0" y="156" width="420" height="96" rx="16" ry="16" class="muted stroke"></rect>
+    <circle cx="36" cy="204" r="22" class="awsOrange"></circle>
+    <text x="72" y="200" class="h3 ink">S3</text>
+    <text x="72" y="228" class="small">Logs, screenshots, run reports</text>
+
+    <rect x="0" y="272" width="420" height="96" rx="16" ry="16" class="muted stroke"></rect>
+    <circle cx="36" cy="320" r="22" class="awsOrange"></circle>
+    <text x="72" y="316" class="h3 ink">EventBridge</text>
+    <text x="72" y="344" class="small">Daily schedule (cron)</text>
+
+    <rect x="0" y="388" width="420" height="96" rx="16" ry="16" class="muted stroke"></rect>
+    <circle cx="36" cy="436" r="22" class="awsOrange"></circle>
+    <text x="72" y="432" class="h3 ink">Secrets Manager</text>
+    <text x="72" y="460" class="small">Credentials &amp; keys</text>
+
+    <rect x="0" y="504" width="420" height="96" rx="16" ry="16" class="muted stroke"></rect>
+    <circle cx="36" cy="552" r="22" class="awsOrange"></circle>
+    <text x="72" y="548" class="h3 ink">CloudWatch</text>
+    <text x="72" y="576" class="small">Centralized logs &amp; metrics</text>
+  </g>
+
+  <!-- Notification bar -->
+  <rect x="1104" y="760" rx="16" ry="16" width="420" height="50" class="awsBlue"></rect>
+  <text x="1126" y="793" class="small white">Notification · Applied to SDE I · Tailored form completed</text>
+
+  <!-- Footer -->
+  <text x="800" y="860" text-anchor="middle" class="small ink">
+    Python • Selenium • Rule-based Matching • AWS DynamoDB/S3/EventBridge/Secrets Manager/CloudWatch • Docker
+  </text>
+</svg>
