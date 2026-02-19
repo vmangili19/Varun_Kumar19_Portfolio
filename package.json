@@ -13,7 +13,7 @@
     "@sanity/icons": "^3.6.0",
     "@sanity/vision": "^3.75.0",
     "framer-motion": "^12.4.2",
-    "next": "15.1.7",
+    "next": "15.1.11",
     "next-sanity": "^9.8.57",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
